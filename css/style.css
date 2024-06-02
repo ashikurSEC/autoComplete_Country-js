@@ -1,0 +1,61 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    min-height: 60vh;
+    justify-content: center;
+    align-items: center;
+    background: #e9e9e9;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container .fas.fa-search {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+#inputCountry {
+    width: 300px;
+    padding: 20px 20px 20px 40px; /* Adjust padding to make space for the icon */
+    font-size: 16px;
+    border: 1px solid #e0e0e0;
+    outline: 0;
+    border-radius: 4px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.autoCompleteItems {
+    position: absolute;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.autoCompleteItems div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.autoCompleteItems div:hover {
+    background-color: #e9e9e9;
+}
